@@ -7,4 +7,4 @@ cap.sniff(timeout=10)
 
 def print_info(packet):
   print("PROTOCOL:"+packet.highest_layer+"SOURCE IP:"+packet.ip.src+"DESTINATION:"+packet.ip.dst)
-cap.apply_on_packets(print_info)
+cap.apply_on_packets(print_info,timeout=None,packet_count=None)
